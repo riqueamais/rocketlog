@@ -7,7 +7,7 @@ import { DeliveriesStatusController } from "@/controllers/Deliveries/deliveries-
 
 const deliveriesRoutes = Router();
 const deliveriesController = new DeliveriesController();
- const deliveriesStatusController = new DeliveriesStatusController();
+const deliveriesStatusController = new DeliveriesStatusController();
 
 deliveriesRoutes.use(ensureAuthenticated, verifyUserAuthorization(["sale"]));
 
