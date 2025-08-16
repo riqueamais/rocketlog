@@ -30,6 +30,12 @@ class DeliveriesController {
             email: true,
           },
         },
+        logs: {
+          select: {
+            id: true,
+            description: true,
+          },
+        },
       },
     });
 
